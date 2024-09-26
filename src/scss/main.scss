@@ -58,6 +58,7 @@ main {
   padding: 1rem;
   text-wrap: wrap;
   overflow-x: hidden;
+  mix-blend-mode: difference;
   p{
     display: inline;
   }
