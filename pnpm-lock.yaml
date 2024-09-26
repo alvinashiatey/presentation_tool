@@ -7,7 +7,14 @@ settings:
 importers:
 
   .:
+    dependencies:
+      textfit:
+        specifier: ^2.4.0
+        version: 2.4.0
     devDependencies:
+      '@types/textfit':
+        specifier: ^2.4.5
+        version: 2.4.5
       sass:
         specifier: ^1.79.3
         version: 1.79.3
@@ -241,6 +248,15 @@ packages:
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
 
+  '@types/jquery@3.5.31':
+    resolution: {integrity: sha512-rf/iB+cPJ/YZfMwr+FVuQbm7IaWC4y3FVYfVDxRGqmUCFjjPII0HWaP0vTPJGp6m4o13AXySCcMbWfrWtBFAKw==}
+
+  '@types/sizzle@2.3.8':
+    resolution: {integrity: sha512-0vWLNK2D5MT9dg0iOo8GlKguPAU02QjmZitPEsXRuJXU/OGIOt9vT9Fc26wtYuavLxtO45v9PGleoL9Z0k1LHg==}
+
+  '@types/textfit@2.4.5':
+    resolution: {integrity: sha512-C/1i+vGFD7xi1UZPePa6pNdoR0eGFCOe7QrZlTuPGPF+Y4JnFcp9cSJGZko+6tW8GmdDdKt7S9W6sCf3ncvk5g==}
+
   chokidar@4.0.1:
     resolution: {integrity: sha512-n8enUVCED/KVRQlab1hr3MVpcVMvxtZjmEa956u+4YijlmQED223XMSYj2tLuKvr4jcCTzNNMpQDUer72MMmzA==}
     engines: {node: '>= 14.16.0'}
@@ -287,6 +303,9 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
+
+  textfit@2.4.0:
+    resolution: {integrity: sha512-/x4aoY5+/tJmu+iwpBH1yw75TFp86M6X15SvaaY/Eep7YySQYtqdOifEtfvVyMwzl7SZ+G4RQw00FD9g5R6i1Q==}
 
   typescript@5.6.2:
     resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
@@ -445,6 +464,16 @@ snapshots:
 
   '@types/estree@1.0.5': {}
 
+  '@types/jquery@3.5.31':
+    dependencies:
+      '@types/sizzle': 2.3.8
+
+  '@types/sizzle@2.3.8': {}
+
+  '@types/textfit@2.4.5':
+    dependencies:
+      '@types/jquery': 3.5.31
+
   chokidar@4.0.1:
     dependencies:
       readdirp: 4.0.1
@@ -521,6 +550,8 @@ snapshots:
       source-map-js: 1.2.1
 
   source-map-js@1.2.1: {}
+
+  textfit@2.4.0: {}
 
   typescript@5.6.2: {}
 
